@@ -1,0 +1,28 @@
+.wrapper
+    lost-center 300px
+    position relative
+
+    +above('s')
+        max-width 380px
+
+    +above('m')
+        max-width 680px
+
+    +above('l')
+        max-width 980px
+
+    +above('xl')
+        max-width 1180px
+
+.col-md-50
+    lost-column: 1/1
+
+    +above('m')
+        lost-column: 1/2
+
+.col-sm-100
+    +below('m')
+        lost-column 1/1
+
+.row
+    lost-utility clearfix

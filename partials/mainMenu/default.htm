@@ -1,0 +1,5 @@
+{% if mainMenu.menuItems %}
+    <ul class="nav-items">
+        {% partial mainMenu ~ "::items" items=mainMenu.menuItems %}
+    </ul>
+{% endif %}

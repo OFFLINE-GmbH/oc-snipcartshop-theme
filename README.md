@@ -1,2 +1,1 @@
-# oc-snipcartshop-theme
-Ecommerce theme for October CMS
+# Snipcart Shop Theme for October CMS

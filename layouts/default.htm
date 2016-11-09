@@ -1,0 +1,31 @@
+[staticMenu mainMenu]
+code = "mainmenu"
+
+[staticPage]
+[localePicker]
+==
+<!doctype html>
+<html lang="{{ localePicker.activeLocale }}">
+<head>
+    {% partial 'meta' %}
+</head>
+<body>
+
+{% partial 'header' %}
+
+<div class="site-wrapper">
+
+    <main class="main">
+        <div class="wrapper">
+            <section class="content">
+                {% page %}
+            </section>
+        </div>
+    </main>
+
+    {% partial 'footer' %}
+</div>
+
+{% partial 'scripts' %}
+</body>
+</html>

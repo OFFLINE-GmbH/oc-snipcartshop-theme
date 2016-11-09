@@ -1,0 +1,18 @@
+title = "Category"
+url = "/kategorie/:slug"
+layout = "default"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/category/:slug"
+
+[products]
+pageNumber = "{{ :page }}"
+categoryFilter = "slug"
+categorySlug = "{{ :slug }}"
+productsPerPage = 1
+noProductsMessage = "No Products found."
+sortOrder = "name asc"
+productPage = "bild-test"
+==
+{% component 'products' %}

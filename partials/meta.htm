@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="theme-color" content="#404855">
+<link rel="icon" type="image/png" href="{{ 'assets/favi_16x16.png'|theme }}" sizes="16x16">
+<link rel="icon" type="image/png" href="{{ 'assets/favi_32x32.png'|theme }}" sizes="32x32">
+<link rel="icon" type="image/png" href="{{ 'assets/favi_96x96.png'|theme }}" sizes="96x96">
+
+<meta name="description" content="{{ this.page.meta_description }}">
+
+{% if this.page.url == '/' %}
+    {% set title = 'XXXXXX' %}
+{% else %}
+    {% if this.page.meta_title %}
+        {% set title = this.page.meta_title ~ ' · XXXXXX' %}
+    {% else %}
+        {% set title = this.page.title ~ ' · XXXXXX' %}
+    {% endif %}
+{% endif %}
+
+<title>{{ title }}</title>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet">
+<link href="{{ 'assets/main.css' | theme }}" rel="stylesheet">
+
+{% styles %}
+{% placeholder stylesheets %}
+
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
+        data-api-key="ZmMwYmM1YjgtY2NlMi00OWQ4LTllNzYtN2U2ZGE1MTZmNjNkNjM2MTM2Nzc4ODY2NTc5MDM3"
+        data-autopop="false" id="snipcart"></script>
+<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css"/>

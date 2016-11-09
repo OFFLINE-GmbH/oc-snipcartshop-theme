@@ -1,0 +1,8 @@
+name: 'Snipcart Shop Theme'
+description: 'Theme for SnipcartShop plugin'
+author: 'OFFLINE GmbH'
+homepage: 'https://offline.swiss'
+code: 'oc-snipcartshop-theme'
+require:
+    - OFFLINE.SnipcartShop
+    - RainLab.Translate
