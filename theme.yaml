@@ -6,3 +6,9 @@ code: 'oc-snipcartshop-theme'
 require:
     - OFFLINE.SnipcartShop
     - RainLab.Translate
+
+translate:
+    en:
+        addtocart: 'Add to cart'
+    de:
+        addtocart: 'In den Warenkorb'

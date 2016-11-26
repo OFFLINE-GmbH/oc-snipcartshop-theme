@@ -1,4 +1,4 @@
-title = "Category"
+title = "Category listing"
 url = "/kategorie/:slug"
 layout = "default"
 is_hidden = 0
@@ -7,11 +7,10 @@ is_hidden = 0
 localeUrl[en] = "/category/:slug"
 
 [products]
-categoryFilter = "slug"
 categorySlug = "{{ :slug }}"
-productsPerPage = 1
+productsPerPage = 9
 noProductsMessage = "No Products found."
 sortOrder = "name asc"
-productPage = "product"
+productPage = "product-page"
 ==
 {% component 'products' %}
