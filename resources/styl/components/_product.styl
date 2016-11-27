@@ -1,9 +1,10 @@
 .product
+    lost-utility clearfix
     &__images
-        lost-column 2/5 2
+        lost-column 2 / 5 2 80px
 
     &__information
-        lost-column 3/5 2
+        lost-column 3 / 5 2 80px
 
     &__main-image
         margin-bottom 3em
@@ -11,7 +12,7 @@
             max-width 100%
 
     &__image-grid > .product-image
-        lost-column 1/5 5 10px
+        lost-column 1 / 5 5 10px
         img
             max-width 100%
 
@@ -26,6 +27,19 @@
         margin 0 0 1em
 
     &__price
-        font-size 1.2em
+        font-size 1.4em
         font-weight 600
         color primary-color
+        margin-bottom .75em
+
+    &__add-to-cart > button
+        color #fff
+        border 1px solid darken(ternary-color, 5)
+        box-shadow 0 2px 0 darken(ternary-color, 5)
+        padding .75em .65em .5em
+        border-radius 4px
+        line-height 1
+        background ternary-color
+        &:hover
+            background lighten(ternary-color, 5)
+
