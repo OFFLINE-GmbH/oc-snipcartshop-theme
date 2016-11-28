@@ -1,6 +1,7 @@
 <header class="header">
     <div class="wrapper">
-        <div class="logo">
+        <div class="header__left">&nbsp;</div>
+        <div class="header__center">
             <a href="{{ '/' | app }}">
                 {#
                 <img src="{{ 'assets/logo.png' | theme }}"
@@ -10,6 +11,8 @@
                 <h1 class="website-heading">Snipcart Shop</h1>
             </a>
         </div>
-        {% partial 'navigation' %}
+        <div class="header__right">
+            {% partial 'metaNavigation' %}
+        </div>
     </div>
 </header>

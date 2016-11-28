@@ -1,0 +1,9 @@
+.locale-picker
+    &__locale
+        display inline-block
+
+    &__locale:not(.locale-picker__locale--active) a
+        color inherit
+
+    &__locale:not(:last-child):after
+        content: "|"

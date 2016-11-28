@@ -1,7 +1,10 @@
-.nav-main
-    lost-column 1/1
-    text-align center
+.nav-wrapper
     border-bottom 1px solid #ddd
+    border-top 1px solid #ddd
+
+.nav-main
+    position relative
+    lost-column 6/8 2
 
     .nav-item
         display inline-block
@@ -21,12 +24,13 @@
 .nav-items
     margin 0
     padding 0
+    list-style none
 
 .nav-link
     display block
     color secondary-color
-    padding 1.1em .8em
-    text-transform uppercase
+    padding .9em .8em .7em
+    font-size .9em
     position relative
     z-index 5
     font-weight 500
@@ -51,3 +55,24 @@
         margin 0
         padding .8em
 
+
+.nav-meta
+    text-align right
+
+    .nav-link
+        color inherit
+
+    .nav-item
+        font-size .7em
+        text-align center
+        display inline-block
+        padding 1.1em 1em
+        margin 0
+        position relative
+        &:last-child
+            padding-right 0
+
+    .nav-icon
+        display block
+        font-size 1.4em
+        margin-bottom .75em

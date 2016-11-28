@@ -9,6 +9,18 @@ require:
 
 translate:
     en:
-        addtocart: 'Add to cart'
+        cart.cart: 'Shopping cart'
+        cart.add: 'Add to cart'
+        topbar.contact: 'Contact us'
+        topbar.free_shipping: 'Free international shipping'
+        search.placeholder: 'Search...'
+        category.empty.heading: 'No products found'
+        category.empty.text: 'There are no products in this category yet'
     de:
-        addtocart: 'In den Warenkorb'
+        cart.cart: 'Warenkorb'
+        cart.add: 'In den Warenkorb'
+        topbar.contact: 'Kontaktieren Sie uns'
+        topbar.free_shipping: 'Kostenloser Versand'
+        search.placeholder: 'Suchen...'
+        category.empty.heading: 'Keine Produkte gefunden'
+        category.empty.text: 'In dieser Kategorie gibt es derzeit keine Produkte'
