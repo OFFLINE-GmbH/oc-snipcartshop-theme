@@ -2,9 +2,9 @@
 ==
 
 {% for code, locale in localePicker.locales %}
-    <div class="locale-picker__locale
+    <div class="picker__option
             {% if localePicker.activeLocale == code %}
-                locale-picker__locale--active
+                picker__option--active
             {% endif %}">
         <a href="#" data-request="onSwitchLocale"
                     data-request-data="locale: '{{ code }}'">
