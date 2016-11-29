@@ -1,33 +1,52 @@
-.product-list
-    .product
-        lost-column 1/4
-        a
-            color inherit
+$singleLine
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
 
-        &__name
-            font-weight 600
+.product-list .product
+    lost-column 1 / 4
+    a
+        color inherit
 
-        &__description
-            color #888
+    &__information
+        display flex
+        justify-content space-between
 
-        &__image
-            color #888
-            height 280px
-            lost-align center
-            img
-                max-width 100%
+    &__label
+        flex 1 1 1em
+        overflow hidden
+        line-height 1.4
 
-        &__price
-            font-size 1.2em
-            font-weight 600
-            color primary-color
+    &__name
+        @extends $singleLine
+        font-weight 600
 
-    .no-results
-        lost-column 1/2
-        lost-move 1/4
-        background #eee
-        padding 2em
-        text-align center
-        border 1px solid #dedede
-        margin-top 3em
-        border-radius 2px
+    &__description
+        @extends $singleLine
+        color #888
+
+    &__image
+        color #888
+        height 280px
+        lost-align center
+        img
+            max-width 100%
+
+    &__prices
+        min-width 25%
+        text-align right
+        line-height 1.4
+
+    &__regular-price
+        font-weight 600
+        color primary-color
+
+.no-results
+    lost-column 1 / 2
+    lost-move 1 / 4
+    background #eee
+    padding 2em
+    text-align center
+    border 1px solid #dedede
+    margin-top 3em
+    border-radius 2px
