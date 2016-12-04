@@ -1,0 +1,9 @@
+.picker
+    &__option
+        display inline-block
+
+    &__option:not(.picker__option--active) a
+        color inherit
+
+    &__option:not(:last-child):after
+        content: "|"

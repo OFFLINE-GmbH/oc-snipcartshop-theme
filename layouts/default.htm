@@ -4,9 +4,12 @@ code = "mainmenu"
 [staticPage]
 
 [localePicker]
-forceUrl = 0
+forceUrl = 1
 
 [snipcartDependencies]
+includeJquery = 1
+
+[currencyPicker]
 ==
 <!doctype html>
 <html lang="{{ localePicker.activeLocale }}">
@@ -15,9 +18,11 @@ forceUrl = 0
 </head>
 <body>
 
-{% partial 'header' %}
-
 <div class="site-wrapper">
+
+    {% partial 'topbar' %}
+    {% partial 'header' %}
+    {% partial 'navigation' %}
 
     <main class="main">
         <div class="wrapper">

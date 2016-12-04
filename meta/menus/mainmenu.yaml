@@ -1,7 +1,7 @@
 name: Mainmenu
 items:
     -
-        title: Shop-Navi
+        title: 'Shop navigation'
         type: all-snipcartshop-categories
         code: ''
         replace: '1'
