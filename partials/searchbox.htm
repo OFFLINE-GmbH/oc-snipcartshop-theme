@@ -1,4 +1,6 @@
 <div class="searchbox">
     <i class="searchbox__icon fa fa-search"></i>
-    <input type="search" class="searchbox__input" placeholder="{{ 'search.placeholder'|_ }}">
+    <form action="{{ 'search'| page }}" method="get">
+        <input name="q" type="search" class="searchbox__input" placeholder="{{ 'search.placeholder'|_ }}" value="{{ input('q') }}">
+    </form>
 </div>

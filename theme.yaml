@@ -5,6 +5,7 @@ homepage: 'https://offline.swiss'
 code: 'oc-snipcartshop-theme'
 require:
     - OFFLINE.SnipcartShop
+    - OFFLINE.SiteSearch
     - RainLab.Translate
 
 translate:
