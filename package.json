@@ -14,6 +14,7 @@
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "cssnano": "^3.4.0",
+    "gulp": "^3.9.1",
     "gulp-cssnano": "^2.0.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-streamify": "^1.0.2",
@@ -23,11 +24,10 @@
     "postcss-normalize": "^0.1.2",
     "poststylus": "^0.2.2",
     "rupture": "^0.6.1",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "bootstrap-styl": "^5.0.5",
+    "fastclick": "^1.0.6"
   },
   "dependencies": {
-    "bootstrap-styl": "^5.0.5",
-    "fastclick": "^1.0.6",
-    "gulp": "^3.9.1"
   }
 }
