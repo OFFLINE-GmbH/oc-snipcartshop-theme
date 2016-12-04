@@ -1,12 +1,12 @@
-title = "Product page"
-url = "/produkt/:slug"
+title = "Product"
+url = "/product/:slug"
 layout = "default"
 is_hidden = 0
 
+[viewBag]
+localeUrl[de] = "/produkt/:slug"
+
 [product]
 productSlug = "{{ :slug }}"
-
-[viewBag]
-localeUrl[en] = "/product/:slug"
 ==
 {% component 'product' %}

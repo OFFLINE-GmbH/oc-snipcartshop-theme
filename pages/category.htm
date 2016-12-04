@@ -1,17 +1,16 @@
-title = "Category listing"
-url = "/kategorie/:slug*"
+title = "Category"
+url = "/category/:slug*"
 layout = "default"
 is_hidden = 0
 
 [viewBag]
-localeUrl[en] = "/category/:slug"
+localeUrl[de] = "/kategorie/:slug*"
 
 [products]
 categoryFilter = "slug"
 categorySlug = "{{ :slug }}"
 productsPerPage = 9
-noProductsMessage = "No Products found."
+noProductsMessage = "No products found."
 sortOrder = "name asc"
-productPage = "product-page"
 ==
 {% component 'products' %}
