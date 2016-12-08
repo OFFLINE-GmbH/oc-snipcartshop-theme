@@ -1,0 +1,34 @@
+.footer
+    lost-utility clearfix
+    background #2F2F2F
+    padding 2em 0
+    color #fff
+
+    .categories
+        lost-utility clearfix
+        list-style none
+        padding-left 0
+        .category
+            lost-column 1/4
+            margin 0
+            +below('m')
+                lost-column 1/2
+            +below('s')
+                lost-column 1/1
+            .category-link
+                color #fff
+
+        .sub-categories .category-link
+            color #aaa
+
+.copyright
+    background #252525
+    text-align center
+    color #fff
+    padding .9em 0 .7em
+    font-size .8rem
+    p
+        margin 0
+
+    a
+        color inherit

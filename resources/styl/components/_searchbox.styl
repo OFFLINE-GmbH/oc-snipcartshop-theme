@@ -1,0 +1,23 @@
+.searchbox
+    lost-column 2/8 2
+    text-align right
+    margin-top .4em
+    position relative
+    +below('s')
+        lost-column 6/8 2
+
+    &__input
+        border-radius 2px
+        background #eee
+        border 1px solid #ddd
+        font-size .8em
+        line-height 1
+        width 20em
+        max-width 100%
+        padding .5em 1.75em .3em .5em
+
+    &__icon
+        position absolute
+        right .5em
+        top .5em
+        color #aaa

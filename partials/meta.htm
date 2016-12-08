@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="theme-color" content="#E74C3C">
+{# <link rel="icon" type="image/png" href="{{ 'assets/favicon_16x16.png'|theme }}" sizes="16x16"> #}
+{# <link rel="icon" type="image/png" href="{{ 'assets/favicon_32x32.png'|theme }}" sizes="32x32"> #}
+{# <link rel="icon" type="image/png" href="{{ 'assets/favicon_96x96.png'|theme }}" sizes="96x96"> #}
+
+{% if this.page.meta_description %}
+    <meta name="description" content="{{ this.page.meta_description }}">
+{% endif %}
+
+{% if this.page.url == '/' %}
+    {% set title = 'Snipcart Shop for October CMS' %}
+{% else %}
+    {% if this.page.meta_title %}
+        {% set title = this.page.meta_title ~ ' · Snipcart Shop for October CMS' %}
+    {% else %}
+        {% set title = this.page.title ~ ' · Snipcart Shop for October CMS' %}
+    {% endif %}
+{% endif %}
+
+<title>{{ title }}</title>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="{{ ['assets/main.css', '@framework.extras'] | theme }}" rel="stylesheet">
+
+{% styles %}
+
+{% component 'snipcartDependencies' %}

@@ -1,0 +1,50 @@
+btn-border-color = primary-color
+btn-background-color = primary-color
+btn-color = #fff
+btn-font-size = 1rem
+
+.btn
+    border 1px solid btn-border-color
+    border-radius 4px
+    color btn-color
+    text-align center
+    padding .8em 1em
+    font-size btn-font-size
+    background btn-background-color
+    outline none
+    transition .2s ease-out
+    transition-property border-color, color, background, box-shadow, transform
+    display inline-block
+    line-height 1
+    box-shadow 0 2px 4px rgba(0,0,0,.1)
+
+    &:hover
+        box-shadow 0 2px 12px rgba(0,0,0,.25)
+
+    &:active
+        transform scale(.98)
+
+    &--inverse
+        background btn-color
+        color btn-background-color
+
+        &.btn--bordered
+            background transparent
+            color #fff
+            border-color #fff
+
+    &--bordered
+        background transparent
+        color primary-color
+        border-color primary-color
+
+        &:hover
+            background btn-color
+            color btn-background-color
+
+    &--small
+        padding .3em .5em
+        font-size .9rem
+
+    + .btn
+        margin-left 1em

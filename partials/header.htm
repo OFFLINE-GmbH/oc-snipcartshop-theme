@@ -1,0 +1,18 @@
+<header class="header">
+    <div class="wrapper">
+        <div class="header__left">&nbsp;</div>
+        <div class="header__center">
+            <a href="{{ '/' | app }}">
+                {#
+                <img src="{{ 'assets/logo.png' | theme }}"
+                     srcset="{{ 'assets/logo.png' | theme }} 1x, {{ 'assets/logo@2x.png' | theme }} 2x"
+                     alt=""/>
+                 #}
+                <h1 class="website-heading">Snipcart Shop</h1>
+            </a>
+        </div>
+        <div class="header__right">
+            {% partial 'metaNavigation' %}
+        </div>
+    </div>
+</header>

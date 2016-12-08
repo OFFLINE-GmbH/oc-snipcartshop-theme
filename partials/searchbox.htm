@@ -1,0 +1,12 @@
+<div class="searchbox">
+    <i class="searchbox__icon fa fa-search"></i>
+    <form action="{{ 'search'| page }}" method="get">
+        <input name="q"
+               type="search"
+               class="searchbox__input"
+               placeholder="{{ 'search.placeholder'|_ }}"
+               value="{{ input('q') }}"
+               required
+        >
+    </form>
+</div>

@@ -1,0 +1,12 @@
+title = "Product"
+url = "/product/:slug"
+layout = "default"
+is_hidden = 0
+
+[viewBag]
+localeUrl[de] = "/produkt/:slug"
+
+[product]
+productSlug = "{{ :slug }}"
+==
+{% component 'product' %}

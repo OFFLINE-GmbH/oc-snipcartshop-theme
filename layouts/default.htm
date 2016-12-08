@@ -1,0 +1,42 @@
+[staticPage]
+[staticMenu mainMenu]
+code = "mainmenu"
+
+[localePicker]
+forceUrl = 1
+
+[snipcartDependencies]
+includeJquery = 1
+
+[currencyPicker]
+==
+<!doctype html>
+<html lang="{{ localePicker.activeLocale }}">
+<head>
+    {% partial 'meta' %}
+</head>
+<body>
+
+{% partial 'slideNav' %}
+
+<div class="site-wrapper">
+
+    {% partial 'topbar' %}
+    {% partial 'header' %}
+    {% partial 'navigation' %}
+
+    <main class="main">
+        <div class="wrapper">
+            <section class="content">
+                {% page %}
+            </section>
+        </div>
+    </main>
+
+    {% partial 'footer' %}
+</div>
+
+{% partial 'flash' %}
+{% partial 'scripts' %}
+</body>
+</html>

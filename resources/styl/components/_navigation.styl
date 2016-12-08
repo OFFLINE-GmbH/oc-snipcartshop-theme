@@ -1,0 +1,85 @@
+.nav-wrapper
+    border-bottom 1px solid #ddd
+    border-top 1px solid #ddd
+    min-height 48px
+
+.nav-main
+    position relative
+    lost-column 6/8 2
+    +below('s')
+        lost-column 2/8 2
+        .nav-items
+            display none
+
+    .nav-item
+        display inline-block
+        padding 0
+        margin 0
+        position relative
+        &:first-child
+            margin-left 0
+
+        &--active > .nav-link,
+        &--child-active > .nav-link
+            color primary-color
+
+        &:hover .nav-sub
+            display block
+
+.nav-items
+    margin 0
+    padding 0
+    list-style none
+
+.nav-link
+    display block
+    color secondary-color
+    padding .9em .8em .7em
+    font-size .9em
+    position relative
+    z-index 5
+    font-weight 500
+
+.nav-main .nav-sub
+    position absolute
+    z-index 1
+    padding-left 0
+    display none
+    text-align left
+    left 0
+    top 44px
+    min-width 250px
+    box-shadow 0 2px 6px rgba(0, 0, 0, .1)
+    background #fff
+    .nav-item
+        display block
+        margin 0
+
+    .nav-link
+        display block
+        margin 0
+        padding .8em
+
+
+.nav-meta
+    text-align right
+
+    .nav-link
+        color inherit
+
+    .nav-item
+        font-size .7em
+        text-align center
+        display inline-block
+        padding 1.1em 1em
+        margin 0
+        position relative
+        &:last-child
+            padding-right 0
+        +below('s')
+            font-size .6em
+
+    .nav-icon
+        display block
+        font-size 1.4em
+        margin-bottom .75em

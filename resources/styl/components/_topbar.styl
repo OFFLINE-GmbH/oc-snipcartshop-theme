@@ -1,0 +1,30 @@
+.topbar
+    background #f3f3f3
+    lost-utility clearfix
+    padding 1em 0 .9em
+    font-size .8em
+    line-height 1
+    text-transform uppercase
+    a
+        color inherit
+
+    span
+        color primary-color
+
+    &__left,
+    &__center,
+    &__right
+        lost-column 1/3
+        +below('m')
+            display none
+
+    &__center
+        text-align center
+
+    &__right
+        text-align right
+        +below('m')
+            lost-column 1/1
+            display block
+        +below('s')
+            text-align center

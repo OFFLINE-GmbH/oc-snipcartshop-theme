@@ -1,0 +1,16 @@
+title = "Category"
+url = "/category/:slug*"
+layout = "default"
+is_hidden = 0
+
+[viewBag]
+localeUrl[de] = "/kategorie/:slug*"
+
+[products]
+categoryFilter = "slug"
+categorySlug = "{{ :slug }}"
+productsPerPage = 9
+noProductsMessage = "No products found."
+sortOrder = "name asc"
+==
+{% component 'products' %}

@@ -1,0 +1,13 @@
+[currencyPicker]
+==
+{% for code, currency in currencyPicker.currencies %}
+    <div class="picker__option
+            {% if currencyPicker.activeCurrency == code %}
+                picker__option--active
+            {% endif %}">
+        <a href="#" data-request="onSwitchCurrency"
+                    data-request-data="currency: '{{ code }}'">
+            {{ code|upper }}
+        </a>
+    </div>
+{% endfor %}
