@@ -15,9 +15,16 @@
     &__center,
     &__right
         lost-column 1/3
+        +below('m')
+            display none
 
     &__center
         text-align center
 
     &__right
         text-align right
+        +below('m')
+            lost-column 1/1
+            display block
+        +below('s')
+            text-align center

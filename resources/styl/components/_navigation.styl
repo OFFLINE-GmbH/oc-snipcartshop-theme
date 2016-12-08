@@ -6,6 +6,10 @@
 .nav-main
     position relative
     lost-column 6/8 2
+    +below('s')
+        lost-column 2/8 2
+        .nav-items
+            display none
 
     .nav-item
         display inline-block
@@ -72,6 +76,8 @@
         position relative
         &:last-child
             padding-right 0
+        +below('s')
+            font-size .6em
 
     .nav-icon
         display block
