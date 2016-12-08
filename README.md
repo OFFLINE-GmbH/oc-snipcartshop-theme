@@ -2,6 +2,8 @@
 
 Ecommerce theme October CMS built with the [OFFLINE.SnipcartShop](https://github.com/OFFLINE-GmbH/oc-snipcartshop-plugin) plugin.
 
+**Demo:** [https://snipcart.offline.swiss](https://snipcart.offline.swiss)
+
 ## Features
 
 * Responsive
