@@ -4,7 +4,13 @@ $singleLine /* Make sure the text does not wrap */
     white-space nowrap
 
 .product-list .product
-    lost-column 1 / 4
+    lost-column 1/4
+    +below('m')
+        lost-column 1/3
+    +below('s')
+        lost-column 1/2
+    +below('xs')
+        lost-column 1/1
     a
         color inherit
 
