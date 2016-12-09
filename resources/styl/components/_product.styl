@@ -2,12 +2,20 @@
     lost-utility clearfix
     &__images
         lost-column 2 / 5 2 80px
+        +below('m')
+            lost-column 1/1
+            margin-bottom 2em
 
     &__information
         lost-column 3 / 5 2 80px
+        +below('m')
+            lost-column 1/1
 
     &__main-image
         margin-bottom 3em
+        +below('m')
+            text-align center
+
         img
             max-width 100%
 
@@ -44,4 +52,6 @@
         font-weight 600
         &:hover
             background lighten(ternary-color, 5)
+        +below('xs')
+            width 100%
 
