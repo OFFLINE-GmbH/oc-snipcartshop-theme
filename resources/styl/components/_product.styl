@@ -55,9 +55,15 @@
         +below('xs')
             width 100%
 
+    &__accessories
+        margin-top 2em
+        padding-top 2em
+        border-top 1px solid #eee
+
     &__additional-data
         margin 2em 0
         lost-utility clearfix
+
 
 .product-info
     lost-column 1/2
@@ -70,3 +76,15 @@
     &__title
         margin 0
         font-size 1em
+
+.accessories-grid
+    lost-utility clearfix
+    .accessory
+        lost-column 1/4
+        &__image
+            lost-align center
+            height 120px
+            overflow hidden
+            img
+                max-width 100%
+                max-height 100%

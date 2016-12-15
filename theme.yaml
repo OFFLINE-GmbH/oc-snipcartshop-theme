@@ -18,6 +18,7 @@ translate:
         search.placeholder: 'Search...'
         category.empty.heading: 'No products found'
         category.empty.text: 'There are no products in this category yet'
+        product.accessories: 'Accessories'
     de:
         cart.cart: 'Warenkorb'
         cart.add: 'In den Warenkorb'
@@ -27,3 +28,4 @@ translate:
         search.placeholder: 'Suchen...'
         category.empty.heading: 'Keine Produkte gefunden'
         category.empty.text: 'In dieser Kategorie gibt es derzeit keine Produkte'
+        product.accessories: 'Zubehör'
